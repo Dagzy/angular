@@ -5,8 +5,15 @@ angular.module('myApp')
 	function getList(){
 		return items;
 	}
+	//How do we debug this?
+	function removeAll(){
+		items = [];
+
+	}
 
 	return {
-		getList: getList
+		getList: getList,
+		removeAll: removeAll
+
 	}
-})
+});

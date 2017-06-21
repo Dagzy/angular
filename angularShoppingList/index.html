@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!-- ng indicates Angular | this expression attaches the forms, and allows for dynamic pages-->
+<!-- <!DOCTYPE html>
+ng indicates Angular | this expression attaches the forms, and allows for dynamic pages
 <html ng-app="myApp">
 	<head>
 		<title>Shopping List Application</title>
@@ -21,4 +21,27 @@
     		<script type="text/javascript" src="./shopping-service.js"></script>
     		<script type="text/javascript" src="./home-controller.js"></script>
 	</body>
+</html> -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Shopping List Application</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/shopping-list">Shopping List</a></li>
+            </ul>
+        </nav>
+        <main ng-view></main>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+        <script src="./shopping-config.js" ></script>
+        <script src="./shopping-controller.js" ></script>
+        <script src="./shopping-service.js" ></script>
+        <script src="./home-controller.js" ></script>
+    </body>
 </html>
